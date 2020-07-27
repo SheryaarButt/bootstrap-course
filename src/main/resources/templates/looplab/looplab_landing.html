@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          th:href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+          th:href="webjars/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="../../static/looplab/css/style.css"
+          th:href="looplab/css/style.css">
+    <title>Loop lab</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand"
+           href="looplab_landing.html"
+           th:href="/looplab">LoopLAB</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarItems">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#homeHead" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exploreHead" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#createHead" class="nav-link">Create</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shareHead" class="nav-link">Share</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        th:src="webjars/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"
+        th:src="webjars/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        th:src="webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+    $('#year').text(new Date().getFullYear());
+</script>
+</body>
+</html>
